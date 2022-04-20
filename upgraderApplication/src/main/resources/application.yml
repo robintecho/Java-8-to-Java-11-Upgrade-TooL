@@ -1,0 +1,9 @@
+configFilepath: ..//upgraderApplication//src//main//resources//configuration.json
+server:
+  port: 9001
+
+spring:
+  application:
+    name: Upgader
+  zipkin:
+    base-url: http://127.0.0.1:9411/

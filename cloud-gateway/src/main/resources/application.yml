@@ -1,0 +1,20 @@
+server:
+  port: 9191
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: FILEUPLOAD
+          uri: lb://FILEUPLOAD
+          predicates:
+            - Path=/FileUpload/Upload/**
+        - id: Upgader
+          uri: lb://Upgader
+          predicates:
+            - Path=/upgraderApplication/update/**
+
+
+

@@ -1,0 +1,156 @@
+{
+	"searchForPomFileConfiguration": {
+		"path": "/Users/RudhirPC/Documents/spring-boot-tutorial-master/login-registration-springboot-hibernate-jsp-auth",
+		"enable":false,
+		"fileName": "pom.xml",
+		"changes": [
+			{
+				"oldValue": "<maven.compiler.source>1.8</maven.compiler.source>",
+				"newValue": "<maven.compiler.source>11</maven.compiler.source>"
+			},
+			{
+				"oldValue": "<maven.compiler.target>1.8</maven.compiler.target>",
+				"newValue": "<maven.compiler.target>11</maven.compiler.target>"
+			},
+			{
+				"oldValue": "<java.version>1.8</java.version>",
+				"newValue": "<java.version>11</java.version>"
+			},
+			{
+				"oldValue": "<source>1.8</source>",
+				"newValue": "<source>11</source>"
+			},
+			{
+				"oldValue": "<source>1.8</source>",
+				"newValue": "<source>11</source>"
+			},
+			{
+				"oldValue": "<target>1.8</target>",
+				"newValue": "<target>11</target>"
+			},
+			{
+				"oldValue": "<version>3.5.1</version>",
+				"newValue": "<version>3.8.0</version>"
+			},
+			{
+				"oldValue": "<version>3.7.0</version>",
+				"newValue": "<version>3.8.0</version>"
+			},
+			{
+				"parentNodes": "dependencies",
+				"oldValue": "<dependency><groupId>org.codehaus.jettison</groupId><artifactId>jettison</artifactId><version>1.4.0</version></dependency>",
+				"newValue": "<dependency><groupId>org.codehaus.jettison</groupId><artifactId>jettison</artifactId><version>1.4.1</version></dependency>"
+			},
+			{
+				"parentNodes": "dependencies",
+				"oldValue": "<dependency><groupId>commons-io</groupId><artifactId>commons-io</artifactId><version>2.6</version></dependency>",
+				"newValue": "<dependency><groupId>commons-io</groupId><artifactId>commons-io</artifactId><version>2.8.0</version></dependency>"
+			}
+		]
+	},
+	"searchForPomVmFileConfiguration": {
+		"path": "/Users/RudhirPC/Documents/spring-boot-tutorial-master/login-registration-springboot-hibernate-jsp-auth",
+		"enable": false,
+		"fileName": "pom.vm",
+		"changes": [
+			{
+				"oldValue": "<maven.compiler.source>1.8</maven.compiler.source>",
+				"newValue": "<maven.compiler.source>11</maven.compiler.source>"
+			},
+			{
+				"oldValue": "<maven.compiler.target>1.8</maven.compiler.target>",
+				"newValue": "<maven.compiler.target>11</maven.compiler.target>"
+			},
+			{
+				"oldValue": "<java.version>1.8</java.version>",
+				"newValue": "<java.version>11</java.version>"
+			},
+			{
+				"oldValue": "<source>1.8</source>",
+				"newValue": "<source>11</source>"
+			},
+			{
+				"oldValue": "<target>1.8</target>",
+				"newValue": "<target>11</target>"
+			},
+			{
+				"oldValue": "<version>3.5.1</version>",
+				"newValue": "<version>3.8.0</version>"
+			},
+			{
+				"oldValue": "<version>3.7.0</version>",
+				"newValue": "<version>3.8.0</version>"
+			}
+			,{
+				"parentNodes": "dependencies",
+				"oldValue": "<dependency><groupId>org.codehaus.jettison</groupId><artifactId>jettison</artifactId><version>1.4.0</version></dependency>",
+				"newValue": "<dependency><groupId>org.codehaus.jettison</groupId><artifactId>jettison</artifactId><version>1.4.1</version></dependency>"
+			},
+			{
+				"parentNodes": "dependencies",
+				"oldValue": "<dependency><groupId>commons-io</groupId><artifactId>commons-io</artifactId><version>2.6</version></dependency>",
+				"newValue": "<dependency><groupId>commons-io</groupId><artifactId>commons-io</artifactId><version>2.8.0</version></dependency>"
+			}
+		]
+	},
+	"searchForParentPomVmFileConfiguration": {
+		"path": "/Users/RudhirPC/Documents/spring-boot-tutorial-master/login-registration-springboot-hibernate-jsp-auth",
+		"enable": false,
+		"fileName": "parentPom.vm",
+		"changes": [
+			{
+				"oldValue": "<maven.compiler.source>1.8</maven.compiler.source>",
+				"newValue": "<maven.compiler.source>11</maven.compiler.source>"
+			},
+			{
+				"oldValue": "<maven.compiler.target>1.8</maven.compiler.target>",
+				"newValue": "<maven.compiler.target>11</maven.compiler.target>"
+			},
+			{
+				"oldValue": "<java.version>1.8</java.version>",
+				"newValue": "<java.version>11</java.version>"
+			},
+			{
+				"oldValue": "<source>1.8</source>",
+				"newValue": "<source>11</source>"
+			},
+			{
+				"oldValue": "<target>1.8</target>",
+				"newValue": "<target>11</target>"
+			},
+			{
+				"oldValue": "<version>3.5.1</version>",
+				"newValue": "<version>3.8.0</version>"
+			},
+			{
+				"oldValue": "<version>3.7.0</version>",
+				"newValue": "<version>3.8.0</version>"
+			}
+			,{
+				"parentNodes": "dependencies",
+				"oldValue": "<dependency><groupId>org.codehaus.jettison</groupId><artifactId>jettison</artifactId><version>1.4.0</version></dependency>",
+				"newValue": "<dependency><groupId>org.codehaus.jettison</groupId><artifactId>jettison</artifactId><version>1.4.1</version></dependency>"
+			},
+			{
+				"parentNodes": "dependencies",
+				"oldValue": "<dependency><groupId>commons-io</groupId><artifactId>commons-io</artifactId><version>2.6</version></dependency>",
+				"newValue": "<dependency><groupId>commons-io</groupId><artifactId>commons-io</artifactId><version>2.8.0</version></dependency>"
+			}
+		]
+	},
+	"javaFileChangesConfiguration": {
+		"path": "D:\\Back-Up\\upgraderApplication",
+		"enable": true,
+		"fileName": "*.java",
+		"changes": [
+			{
+				"oldValue": "import com.sun.misc.Cache;",
+				"newValue": ""
+			},
+			{
+				"oldValue" : "import com.suntecgroup.xelerate.platform.exception.*;",
+				"newValue" : "import com.suntecgroup.xelerate.platform.exception.*;\nimport com.suntecgroup.xelerate.platform.exception.Module;"
+			}
+		]
+	}
+}
