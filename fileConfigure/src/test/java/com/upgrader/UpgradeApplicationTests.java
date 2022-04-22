@@ -1,4 +1,4 @@
-package com.upgrader.upgrade_application;
+package com.upgrader;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
