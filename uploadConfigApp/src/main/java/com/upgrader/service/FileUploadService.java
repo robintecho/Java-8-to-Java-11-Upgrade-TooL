@@ -26,6 +26,7 @@ public class FileUploadService {
 		Object fileID = template.store(upload.getInputStream(), upload.getOriginalFilename(), upload.getContentType(), metadata);
 
 		//return as a string
+		logger.info("Upload Successfully");
 		return fileID.toString();
 	}
 }

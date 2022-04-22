@@ -1,8 +1,11 @@
 package com.upgrader.service;
 
 import com.mongodb.client.gridfs.model.GridFSFile;
+import com.upgrader.controller.FileUploadController;
 import com.upgrader.model.LoadFile;
 import org.apache.commons.io.IOUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.gridfs.GridFsOperations;
@@ -18,6 +21,9 @@ public class RetriveFile {
 
     @Autowired
     private GridFsTemplate template;
+
+    private static final Logger logger = LogManager.getLogger(RetriveFile.class);
+
     public LoadFile downloadFile() throws IOException {
 
         //search file
@@ -37,7 +43,7 @@ public class RetriveFile {
 
             loadFile.setFile( IOUtils.toByteArray(operations.getResource(gridFSFile).getInputStream()) );
         }
-
+        logger.info("Data Collected");
         return loadFile;
     }
 
