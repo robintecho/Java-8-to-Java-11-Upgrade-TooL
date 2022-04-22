@@ -1,18 +1,6 @@
 configFilepath: ..\\upgrade_application\\src\\main\\resources\\
-
 server:
-  data:
-    mongodb:
-      port: 27017
-      host: localhost
-      database: uploads
   port: 9002
-
-  servlet:
-    multipart:
-      enabled : true
-      max-file-size : 200MB
-      max-request-size : 200MB
 
 spring:
   application:
