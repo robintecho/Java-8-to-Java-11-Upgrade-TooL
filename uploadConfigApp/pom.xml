@@ -8,7 +8,7 @@
 		<version>2.6.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.upgrader</groupId>
+	<groupId>com.configurator</groupId>
 	<artifactId>upgrade_application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>upgrade_application</name>
@@ -89,8 +89,8 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-maven-plugin</artifactId>
           </plugin>
         </plugins>
       </build>

@@ -1,8 +1,7 @@
-package com.upgrader.service;
+package com.configurator.service;
 
 import com.mongodb.client.gridfs.model.GridFSFile;
-import com.upgrader.controller.FileUploadController;
-import com.upgrader.model.LoadFile;
+import com.configurator.model.LoadFile;
 import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

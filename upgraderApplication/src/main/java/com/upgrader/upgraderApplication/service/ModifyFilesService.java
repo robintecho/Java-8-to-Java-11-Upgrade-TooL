@@ -19,8 +19,9 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -30,7 +31,7 @@ import org.xml.sax.SAXException;
 
 @Service
 public class ModifyFilesService {
-	private static final Logger logger = LogManager.getLogger(ModifyFilesService.class);
+	private static final Logger logger = LoggerFactory.getLogger("ModifyFilesService");
 
 	/**
 	 * Modify all files to convert content old to new.

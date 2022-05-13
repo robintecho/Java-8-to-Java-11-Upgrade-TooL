@@ -1,4 +1,4 @@
-package com.upgrader.model;
+package com.configurator.model;
 
 public class LoadFile {
 

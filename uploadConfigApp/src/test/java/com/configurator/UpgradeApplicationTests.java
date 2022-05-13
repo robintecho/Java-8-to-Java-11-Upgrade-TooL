@@ -1,4 +1,4 @@
-package com.upgrader;
+package com.configurator;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

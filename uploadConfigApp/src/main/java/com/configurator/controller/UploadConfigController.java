@@ -1,8 +1,8 @@
-package com.upgrader.controller;
+package com.configurator.controller;
 
-import com.upgrader.model.LoadFile;
-import com.upgrader.service.DeleteCollection;
-import com.upgrader.service.RetriveFile;
+import com.configurator.model.LoadFile;
+import com.configurator.service.LocalFileUpload;
+import com.configurator.service.RetriveFile;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,23 +15,23 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.upgrader.service.FileUploadService;
+import com.configurator.service.UploadConfigService;
 
 import java.io.IOException;
 
 @RestController
 @RequestMapping("fileconfig")
-public class FileUploadController {
-    private static final Logger logger = LogManager.getLogger(FileUploadController.class);
+public class UploadConfigController {
+    private static final Logger logger = LogManager.getLogger(UploadConfigController.class);
 
     @Autowired
-    FileUploadService fileUploadService;
+    UploadConfigService fileUploadService;
 
     @Autowired
     RetriveFile retriveFile;
 
     @Autowired
-    DeleteCollection deleteCollection;
+    LocalFileUpload localFileUpload;
 
 
     private static final String UPLOAD_SERVICE = "uploadService";
@@ -39,7 +39,7 @@ public class FileUploadController {
     @PostMapping(path = "/upload")
     @CircuitBreaker(name = UPLOAD_SERVICE, fallbackMethod = "uploadServiceFallback")
     public ResponseEntity<Object> uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
-        deleteCollection.before();
+        fileUploadService.before();
         logger.info("Uploaded");
         return new ResponseEntity<Object>(fileUploadService.uploadFile(file), HttpStatus.OK);
     }
@@ -58,5 +58,10 @@ public class FileUploadController {
                 .body(new ByteArrayResource(loadFile.getFile()));
     }
 
+    @PostMapping("/localupld")
+    public ResponseEntity<Object> localupload(@RequestParam("file")MultipartFile file){
+        localFileUpload.localuploadFile(file);
+        return new ResponseEntity<Object>("The File Uploaded in the Current Directory", HttpStatus.OK);
+    }
 
 }

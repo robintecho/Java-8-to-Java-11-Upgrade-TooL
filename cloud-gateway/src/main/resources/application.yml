@@ -10,7 +10,7 @@ spring:
         - id: FILEUPLOAD
           uri: lb://FILEUPLOAD
           predicates:
-            - Path=/FileUpload/Upload/**
+            - Path=/fileconfig/**
         - id: Upgader
           uri: lb://Upgader
           predicates:

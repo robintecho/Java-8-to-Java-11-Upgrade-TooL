@@ -1,4 +1,4 @@
-configFilepath: ..\\upgrade_application\\src\\main\\resources\\
+configFilepath: ..\\uploadConfigApp\\src\\main\\resources\\
 
 server:
   data:

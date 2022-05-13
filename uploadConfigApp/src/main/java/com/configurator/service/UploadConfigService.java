@@ -1,4 +1,4 @@
-package com.upgrader.service;
+package com.configurator.service;
 
 import java.io.IOException;
 import com.mongodb.BasicDBObject;
@@ -6,13 +6,16 @@ import com.mongodb.DBObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.gridfs.GridFsOperations;
 import org.springframework.data.mongodb.gridfs.GridFsTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service
-public class FileUploadService {
-	private static final Logger logger = LogManager.getLogger(FileUploadService.class);
+public class UploadConfigService {
+	private static final Logger logger = LogManager.getLogger(UploadConfigService.class);
 	@Autowired
 	private GridFsTemplate template;
 
@@ -28,5 +31,15 @@ public class FileUploadService {
 		//return as a string
 		logger.info("Upload Successfully");
 		return fileID.toString();
+	}
+
+	@Autowired
+	GridFsOperations gridFsOperations;
+
+    @DeleteMapping("/delete")
+	public void before() {
+		gridFsOperations.delete(new Query());
+		logger.info("Deleted Successfully");
+
 	}
 }
